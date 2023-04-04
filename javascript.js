@@ -38,3 +38,9 @@ heading1.classList.add('text');
 heading1.textContent = "I'm in a div";
 
 div.appendChild(heading1);
+
+const para1 = document.createElement('p');
+para1.classList.add('para');
+para1.textContent = "ME TOO!";
+
+div.appendChild(para1);
