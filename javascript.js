@@ -23,3 +23,11 @@ heading3.classList.add('content');
 heading3.textContent = "I'm a blue h3";
 
 container.appendChild(heading3);
+
+// add a new div container
+const div = document.createElement('div');
+div.style.backgroundColor = 'pink';
+div.style.border = 'black';
+div.classList.add('content');
+
+container.appendChild(div);
