@@ -16,7 +16,7 @@ para.textContent = "Hey I'm red!";
 
 container.appendChild(para);
 
-// add a new heading
+// adds a new heading
 const heading3 = document.createElement('h3');
 heading3.style.color = 'blue';
 heading3.classList.add('content');
@@ -24,10 +24,17 @@ heading3.textContent = "I'm a blue h3";
 
 container.appendChild(heading3);
 
-// add a new div container
+// adds a new div container
 const div = document.createElement('div');
 div.style.backgroundColor = 'pink';
 div.style.border = 'black';
-div.classList.add('content');
+div.classList.add('container1');
 
 container.appendChild(div);
+
+// adds a new heading
+const heading1 = document.createElement('h1');
+heading1.classList.add('text');
+heading1.textContent = "I'm in a div";
+
+div.appendChild(heading1);
