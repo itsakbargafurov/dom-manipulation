@@ -56,3 +56,16 @@ const btn1 = document.querySelector('#btn1');
 btn1.addEventListener('click', () => {
     alert('hey everybody');
 });
+
+// named function for events
+function alertFunction() {
+    alert("yay! you did it");
+}
+
+// adds an event to button: method 2
+const btn2 = document.querySelector('#btn2');
+btn2.onlick = alertFunction;
+
+// adds an event listener to button: method 3
+const btn3 = document.querySelector('#btn3');
+btn3.addEventListener('click', alertFunction);
