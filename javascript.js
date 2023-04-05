@@ -50,3 +50,9 @@ div.appendChild(para1);
 // adds an event to button
 const btn = document.querySelector('#btn');
 btn.onclick = () => alert('hey everybody');
+
+// adds an event listener to button
+const btn1 = document.querySelector('#btn1');
+btn1.addEventListener('click', () => {
+    alert('hey everybody');
+});
