@@ -39,8 +39,14 @@ heading1.textContent = "I'm in a div";
 
 div.appendChild(heading1);
 
+// adds a new paragraph
+
 const para1 = document.createElement('p');
 para1.classList.add('para');
 para1.textContent = "ME TOO!";
 
 div.appendChild(para1);
+
+// adds an event to button
+const btn = document.querySelector('#btn');
+btn.onclick = () => alert('hey everybody');
