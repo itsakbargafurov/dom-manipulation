@@ -69,3 +69,10 @@ btn2.onlick = alertFunction;
 // adds an event listener to button: method 3
 const btn3 = document.querySelector('#btn3');
 btn3.addEventListener('click', alertFunction);
+
+// adds an event listener with a callback function
+const btn4 = document.querySelector('#btn4');
+btn4.addEventListener('click', function(e) {
+    console.log(e);
+    e.target.style.backgroundColor = 'pink';
+});
