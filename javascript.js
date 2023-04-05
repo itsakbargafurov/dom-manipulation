@@ -74,5 +74,18 @@ btn3.addEventListener('click', alertFunction);
 const btn4 = document.querySelector('#btn4');
 btn4.addEventListener('click', function(e) {
     console.log(e);
+    console.log(e.target);
     e.target.style.backgroundColor = 'pink';
+});
+
+// buttons is a node list (acts like an array)
+const buttons = document.querySelectorAll('button');
+
+// forEach is used to iterate through each button
+buttons.forEach((button) =>  {
+
+    // add for each one a 'click' listener
+    button.addEventListener('click', () => {
+        console.log(button.id);
+    });
 });
